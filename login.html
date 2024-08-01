@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.min.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Gardening Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+    Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Niconne' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){        
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+            });
+        });
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .cards-container {
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+            scroll-snap-type: y mandatory;
+            height: calc(100vh - 50px);
+            padding: 10px;
+        }
+        .card {
+            flex: 0 0 calc(100vh - 20px);
+            display: flex;
+            scroll-snap-align: start;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            background-color: #fff;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .card-details {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .card-image {
+            flex: 1;
+            /* background-color: #e0e0e0; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card-image img {
+            max-width: 100%;
+            max-height: 80%;
+            object-fit: cover;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .card-details h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .card-details p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .card-details a {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            margin-right: 500px;
+            font-size: 0.9em;
+            width:auto;
+        }
+        .card-details a:hover {
+            background-color: #0056b3;
+        }
+        .cards-container::-webkit-scrollbar {
+            width: 12px;
+        }
+        .cards-container::-webkit-scrollbar-track {
+            background: #f0f0f0;
+        }
+        .cards-container::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        .cards-container::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <!-- header-section-starts -->
+    <div class="header-banner">
+        <div class="container">
+            <div class="home">
+                <a href="index.html"><span class="glyphicon glyphicon-home"></span></a>
+            </div>
+            <div class="header-top">
+                <div class="social-icons">
+                    <i class="facebook"></i>
+                    <i class="twitter"></i>
+                    <i class="googlepluse"></i>
+                </div>
+                <span class="menu"><img src="images/nav.png" alt=""/></span>
+                <div class="top-menu">
+                    <ul>
+                        <nav class="cl-effect-13">
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a class="scroll" href="#news">News</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#card-page" class="scroll">Government Schemes</a></li>
+                        </nav>
+                    </ul>
+                </div>
+                <script> 
+                    $( "span.menu" ).click(function() {
+                    $( ".top-menu ul" ).slideToggle( 300, function() {
+                     // Animation complete.
+                    });
+                    });
+                </script>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="banner-info text-center">
+                <h1><a href="index.html"> Government Schemes</a></h1>
+            </div>
+            <div class="header-bottom-grids text-center">
+                <div class="header-bottom-grid1">
+                    <span class="glyphicon "></span>                    
+                    <h4>Farmer's Benefits</h4>
+                </div>
+                <div class="header-bottom-grid2">
+                    <span class="glyphicon"></span>
+                    <h4>Green Revolution</h4>
+                </div>
+                <div class="header-bottom-grid3">
+                    <span class="glyphicon"></span>
+                    <h4>Increasing Per Capita Income</h4>
+                </div>
+                <div class="header-bottom-grid4">
+                    <span class="glyphicon"></span>
+                    <h4>Providing safety</h4>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- header-section-ends -->
+
+    <!-- card-section-starts -->
+    <div id="card-page" class="cards-container">
+        <div class="card">
+            <div class="card-details">
+                <h1>Paramparagat Krishi Vikas Yojana (PKVY)</h1>
+                <p>The Paramparagat Krishi Vikas Yojana (PKVY) is an initiative by the Government of India to promote organic 
+                    farming and sustainable agricultural practices. Launched in 2015, the scheme encourages farmers to adopt eco-friendly methods that improve soil health, enhance crop quality, and reduce reliance on chemical fertilizers and pesticides. PKVY aims to foster organic farming through a cluster-based approach, providing financial assistance, technical support, and market development for organic products.</p>
+                <h2>The main objectives of PKVY are to: </h2>
+                <p>
+                    1.Promote Organic Farming: Encourage the adoption of organic farming practices that boost soil fertility and crop yields.<br/>
+                    2.Support Traditional Practices: Revitalize sustainable traditional agricultural methods.<br/>
+                    3.Enhance Soil Health: Improve soil quality using organic inputs like compost and bio-fertilizers.<br/>
+                    4.Market Development: Develop markets for organic products to ensure better income for farmers.<br/>
+                    5.Capacity Building: Train and support farmers in organic farming practices and certification.<br/>
+                    </p>
+                    <a href="https://dmsouthwest.delhi.gov.in/scheme/paramparagat-krishi-vikas-yojana/#:~:text=The%20Paramparagat%20Krishi%20Vikas%20Yojana,in%20improvement%20of%20soil%20health.
+                    ">Know More</a>
+            </div>
+            <div class="card-image">
+                <img src="/images/Paramparagat-Krishi-Vikas-Yojana.jpg" alt="Card Image 1">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-details">
+                <h1>Pradhan Mantri Krishi Sinchai Yojana (PMKSY)</h1>
+                <p>Pradhan Mantri Krishi Sinchai Yojana (PMKSY) is a flagship initiative launched by the Government of India in
+                     July 2015 to enhance agricultural productivity and ensure sustainable water resource management. The scheme aims to provide irrigation to every farm ("Har Khet Ko Pani") and improve on-farm water use efficiency through various means such as micro-irrigation.</p>
+                     <h2>The main objectives of PMKSY are to: </h2>
+                    
+                    <p>
+                    1. Accelerated Irrigation Benefit Programme (AIBP): To expedite the completion of ongoing major and medium irrigation projects. 
+                 Prioritizing projects with substantial irrigation potential. <br/>
+                    
+                    2. Har Khet Ko Pani (HKKP):Surface Minor Irrigation (SMI): Creating new minor irrigation sources.
+                    Repair, Renovation, and Restoration (RRR) of Water Bodies: Enhancing traditional water bodies' capacity. <br/>
+                    
+                    3.Per Drop More Crop (PDMC):  To promote efficient water use through micro-irrigation systems like drip and sprinkler irrigation.
+                    Focus: Encouraging water-saving technologies. <br/>
+                    
+                    4. Watershed Development:  To conserve soil and water resources in rain-fed areas.
+                    Focus: Implementing soil and water conservation measures like contour bunding and check dams. <br/>
+                    
+                    </p>
+                     <a href="
+                     https://jalshakti-dowr.gov.in/pmksy-aibp/#:~:text=Pradhan%20Mantri%20Krishi%20Sinchayee%20Yojana%20(PMKSY)%20was%20launched%20during%20the,sustainable%20water%20conservation%20practices%2C%20etc.">Know More</a>
+            </div>
+            <div class="card-image">
+                <img src="/images/abhi_sinchai.jpg" alt="Card Image 2">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-details">
+                <h1>National Mission for Sustainable Agriculture (NMSA)
+                </h1>
+                <p>The National Mission for Sustainable Agriculture (NMSA) is a critical initiative by the Government of India aimed at promoting sustainable agricultural practices. 
+                    Launched under the National Action Plan on Climate Change (NAPCC), NMSA seeks to enhance agricultural productivity, resilience, and sustainability. The mission focuses on the efficient management of resources to address the challenges posed by climate change and ensure food security.</p>
+                    <h2>The main objectives of NSMA are to: </h2>
+                  
+                        <p>
+                    1. Efficient Water Management: The mission promotes the adoption of water-efficient technologies and practices such as micro-irrigation (drip and sprinkler systems) to optimize water use in agriculture. It encourages the construction of rainwater harvesting structures and farm ponds to conserve water and improve groundwater recharge. <br/>
+                    
+                    2. Soil Health Management: NMSA advocates for the use of organic inputs, green manuring, and crop rotation to maintain and enhance soil fertility. The mission supports soil testing and the distribution of soil health cards to farmers, providing them with information on the nutrient status of their soil and recommendations for appropriate soil amendments. <br/>
+                    
+                    3. Integrated Farming Systems (IFS): The mission promotes integrated farming systems that combine crop production with livestock, aquaculture, agroforestry, and horticulture. This approach diversifies income sources for farmers, improves resource use efficiency, and enhances the resilience of farming systems to climate variability. <br/>
+                    
+                    4. Climate Resilient Practices: NMSA encourages the adoption of climate-resilient agricultural practices such as conservation agriculture, agroforestry, and the use of climate-resilient crop varieties. These practices help mitigate the adverse effects of climate change and enhance the adaptability of farming systems. <br/>
+                    
+                    5. Capacity Building and Training: The mission focuses on building the capacity of farmers through training programs, workshops, and exposure visits. It aims to equip farmers with the knowledge and skills needed to implement sustainable agricultural practices and make informed decisions.</p>
+                    <a href="https://nmsa.dac.gov.in/">Know More</a>
+            </div>
+            <div class="card-image">
+                <img src="/images/National-Mission-For-Sustainable-Agriculture.jpg" alt="Card Image 3">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-details">
+                <h1> Rashtriya Krishi Vikas Yojana (RKVY)</h1>
+                <p> The Rashtriya Krishi Vikas Yojana (RKVY) is a major initiative by the Government of India aimed at achieving sustainable agricultural growth. Launched in 2007, RKVY focuses on fostering comprehensive and inclusive development in the agricultural sector. The scheme is designed to provide financial support to states for various agricultural projects, thereby enhancing productivity, resilience, and sustainability.
+                </p>
+                <h2>The main objectives of RKVY are to: </h2> 
+                  <p> 
+                    1. Sector-Specific Development: The scheme targets specific agricultural sectors to address their unique challenges and promote growth. This includes support for crops, livestock, fisheries, and horticulture, ensuring that each sector receives tailored assistance to enhance its performance and sustainability. <br/>
+                    
+                    2. Infrastructure Improvement: RKVY provides funding for the development of essential agricultural infrastructure such as irrigation facilities, cold storage chains, and market linkages. This infrastructure is crucial for improving supply chains, reducing post-harvest losses, and enhancing the overall efficiency of the agricultural sector. <br/>
+                    
+                    3. Innovative Practices: The scheme encourages the adoption of innovative and sustainable agricultural practices. This includes the use of advanced technologies, organic farming methods, and integrated pest management techniques to improve productivity and environmental sustainability. <br/>
+                    
+                    4. Capacity Building: RKVY supports training programs and capacity-building initiatives for farmers and agricultural workers. These programs aim to enhance their knowledge and skills, enabling them to adopt best practices and improve their productivity and income. <br/>
+                    
+                    5. Resilience Building: The scheme focuses on making agriculture more resilient to climatic variations and other risks. By promoting climate-resilient crops and practices, RKVY helps farmers adapt to changing environmental conditions and reduce vulnerability. <br/>
+                    
+                    </p>
+                <a href="https://www.myscheme.gov.in/schemes/rkvy">Know More</a>
+            </div>
+            <div class="card-image">
+                <img src="/images/Rashtriya-Krishi-Vikas-Yojna-1024x512.jpg" alt="Card Image 2">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-details">
+                <h1>Pradhan Mantri Fasal Bima Yojana (PMFBY)</h1>
+                <p>The Pradhan Mantri Fasal Bima Yojana (PMFBY) is a flagship crop insurance scheme launched by the Government of India in 2016 to provide financial protection to farmers against crop loss due to natural calamities, pests, and diseases. The scheme aims to promote sustainable farming practices by offering comprehensive insurance coverage and ensuring that farmers can recover from unforeseen agricultural losses.</p>
+                <h2>The main objectives of  PMFBY are to: </h2> 
+               <p> 
+                    1. Insurance Coverage: PMFBY provides insurance coverage for crops against a range of risks, including droughts, floods, cyclones, hailstorms, and pests. This coverage extends to both standing crops and those damaged after harvesting. By offering protection against such risks, the scheme ensures that farmers can recover financially from crop failures and continue their agricultural activities. <br/>
+                    2. Affordability: The scheme aims to make crop insurance accessible and affordable for farmers. Premiums are subsidized by the government, reducing the financial burden on farmers. The premium rates are kept low, and the government bears a significant portion of the cost, making it financially feasible for farmers to participate. <br/>   
+                    3. Seamless Claim Process: PMFBY ensures a streamlined and transparent claim process. Farmers can file claims through their respective insurance companies or local authorities. The scheme uses modern technology and data analytics to assess damage and expedite the settlement of claims, ensuring timely support to farmers. <br/>   
+                    4. Comprehensive Coverage: The scheme provides comprehensive coverage for a wide range of crops, including food grains, oilseeds, pulses, and commercial crops. It also covers post-harvest losses, thereby addressing various aspects of crop production and ensuring holistic support for farmers. <br/>
+                    5. Promotion of Sustainable Farming: By providing financial support during times of crop failure, PMFBY encourages farmers to adopt sustainable farming practices. Knowing that they have financial protection allows farmers to invest in better agricultural practices, technologies, and inputs that can improve productivity and sustainability. <br/>
+                    
+               </p>
+                <a href="https://pmfby.gov.in/">Know More</a>
+            </div>
+            <div class="card-image">
+                <img src="/images/abhi_bhema.jpg" alt="Card Image 2">
+            </div>
+        </div>
+    </div>
+    <!-- card-section-ends -->
+
+    <!-- footer-section-starts -->
+    <div class="footer">
+        <div class="container">
+            <p>Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+        </div>
+    </div>
+    <!-- footer-section-ends -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $().UItoTop({ easingType: 'easeOutQuart' });
+        });
+    </script>
+    <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"> </span></a>
+</body>
+</html>
